@@ -103,7 +103,7 @@ export default function UserNameForm() {
         </View>
       </ScrollView>
 
-      <View className="mb-20 items-end p-4">
+      <View className="mb-0 items-end p-4">
         <TouchableOpacity
           className="h-20 w-20 items-center justify-center"
           onPress={handleSubmit(onSubmit)}
