@@ -1,4 +1,3 @@
-import AntDesign from '@expo/vector-icons/AntDesign';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useRouter } from 'expo-router';
 import React, { useEffect } from 'react';
@@ -7,6 +6,7 @@ import { View, TouchableOpacity, KeyboardAvoidingView, Platform, ScrollView } fr
 import { z } from 'zod';
 
 import { useUserStore } from '../store/useUserStore';
+import RightCircleSvg from './atoms/Icons/RightCircle';
 
 import { Text, TextInput } from '~/components/atoms';
 
@@ -110,7 +110,7 @@ export default function UserNameForm() {
           disabled={!isValid}
           style={{ opacity: isValid ? 1 : 0.4 }} // Add this line
         >
-          <AntDesign name="rightcircle" size={56} color="#523AE4" />
+          <RightCircleSvg />
         </TouchableOpacity>
       </View>
     </KeyboardAvoidingView>
