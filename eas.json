@@ -1,0 +1,28 @@
+{
+  "build": {
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+       
+      }
+    },
+    "testing": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "local-release": {
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "env": {
+        "ANDROID_SDK_ROOT": "/Users/apple/Library/Android/sdk"
+      }
+    }
+  },
+  "cli": {
+    "version": ">= 3.13.0"
+  }
+}
