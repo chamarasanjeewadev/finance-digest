@@ -34,14 +34,23 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.finance.digest"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#000000"
+      },
+      "package": "com.finance.digest"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "210394d0-907e-4f76-bb96-6793338a62ab"
       }
     }
   }
